@@ -89,7 +89,7 @@ function App(): JSX.Element {
         {showAlarm && <h1 className="text-3xl text-center ">🚨 TIMEOUT 🚨</h1>}
       </div>
       <div className="text-center text-[4rem] sm:text-[7rem] md:text-[10rem]">
-        <h1 className="text-xl">Minutos : segundos : milisegundos</h1>
+        <h1 className="text-xl">Minutes : seconds : milliseconds</h1>
         <h1>{`${time.m.toString().padStart(2, "0")}:${time.s
           .toString()
           .padStart(2, "0")}:${time.ms.toString().padStart(2, "0")}`}</h1>
