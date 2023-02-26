@@ -83,7 +83,7 @@ function App(): JSX.Element {
     <div
       className={`${
         showAlarm ? "bg-rose-700" : "bg-gray-200"
-      } container mx-auto rounded-xl shadow border p-8 m-10`}
+      } container mx-auto rounded-xl shadow border p-4 md:p-8 m-10`}
     >
       <div className="hidden h-[2rem] my-4" ref={alertRef}>
         {showAlarm && <h1 className="text-3xl text-center ">🚨 TIMEOUT 🚨</h1>}
@@ -95,7 +95,7 @@ function App(): JSX.Element {
           .padStart(2, "0")}:${time.ms.toString().padStart(2, "0")}`}</h1>
       </div>
 
-      <div className="flex flex-grow justify-around my-6">
+      <div className="flex flex-grow gap-x-2 justify-around my-6">
         {!isRunning ? (
           <Button onClick={resumeStart} text={"Start"} />
         ) : (
